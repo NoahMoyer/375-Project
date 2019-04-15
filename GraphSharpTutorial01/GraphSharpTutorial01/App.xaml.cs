@@ -5,7 +5,7 @@ using System.Data;
 using System.Linq;
 using System.Windows;
 
-namespace GraphSharpTutorial01
+namespace RailroadSimulation
 {
     /// <summary>
     /// Interaction logic for App.xaml

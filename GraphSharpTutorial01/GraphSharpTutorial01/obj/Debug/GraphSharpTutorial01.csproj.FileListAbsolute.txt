@@ -32,3 +32,21 @@ C:\Users\noahm\Dropbox\college stuff\Classes\CIS 375\Project\graphsharp\sourceCo
 C:\Users\noahm\Dropbox\college stuff\Classes\CIS 375\Project\graphsharp\sourceCode\graphsharp\Tutorials\GraphSharpTutorial01\GraphSharpTutorial01\obj\Debug\GraphSharpTutorial01.csproj.CopyComplete
 C:\Users\noahm\Dropbox\college stuff\Classes\CIS 375\Project\graphsharp\sourceCode\graphsharp\Tutorials\GraphSharpTutorial01\GraphSharpTutorial01\obj\Debug\GraphSharpTutorial01.exe
 C:\Users\noahm\Dropbox\college stuff\Classes\CIS 375\Project\graphsharp\sourceCode\graphsharp\Tutorials\GraphSharpTutorial01\GraphSharpTutorial01\obj\Debug\GraphSharpTutorial01.pdb
+C:\Users\noahm\Documents\GitHub\375-Project\GraphSharpTutorial01\GraphSharpTutorial01\bin\Debug\GraphSharpTutorial01.exe
+C:\Users\noahm\Documents\GitHub\375-Project\GraphSharpTutorial01\GraphSharpTutorial01\bin\Debug\GraphSharpTutorial01.pdb
+C:\Users\noahm\Documents\GitHub\375-Project\GraphSharpTutorial01\GraphSharpTutorial01\bin\Debug\GraphSharp.pdb
+C:\Users\noahm\Documents\GitHub\375-Project\GraphSharpTutorial01\GraphSharpTutorial01\obj\Debug\GraphSharpTutorial01.csprojAssemblyReference.cache
+C:\Users\noahm\Documents\GitHub\375-Project\GraphSharpTutorial01\GraphSharpTutorial01\obj\Debug\App.g.cs
+C:\Users\noahm\Documents\GitHub\375-Project\GraphSharpTutorial01\GraphSharpTutorial01\obj\Debug\GraphSharpTutorial01_MarkupCompile.cache
+C:\Users\noahm\Documents\GitHub\375-Project\GraphSharpTutorial01\GraphSharpTutorial01\obj\Debug\GraphSharpTutorial01.g.resources
+C:\Users\noahm\Documents\GitHub\375-Project\GraphSharpTutorial01\GraphSharpTutorial01\obj\Debug\GraphSharpTutorial01.Properties.Resources.resources
+C:\Users\noahm\Documents\GitHub\375-Project\GraphSharpTutorial01\GraphSharpTutorial01\obj\Debug\GraphSharpTutorial01.csproj.GenerateResource.cache
+C:\Users\noahm\Documents\GitHub\375-Project\GraphSharpTutorial01\GraphSharpTutorial01\obj\Debug\GraphSharpTutorial01.csproj.CoreCompileInputs.cache
+C:\Users\noahm\Documents\GitHub\375-Project\GraphSharpTutorial01\GraphSharpTutorial01\obj\Debug\GraphSharpTutorial01.csproj.CopyComplete
+C:\Users\noahm\Documents\GitHub\375-Project\GraphSharpTutorial01\GraphSharpTutorial01\obj\Debug\GraphSharpTutorial01.exe
+C:\Users\noahm\Documents\GitHub\375-Project\GraphSharpTutorial01\GraphSharpTutorial01\obj\Debug\GraphSharpTutorial01.pdb
+C:\Users\noahm\Documents\GitHub\375-Project\GraphSharpTutorial01\GraphSharpTutorial01\obj\Debug\FileInput.g.cs
+C:\Users\noahm\Documents\GitHub\375-Project\GraphSharpTutorial01\GraphSharpTutorial01\obj\Debug\GraphSharpTutorial01_MarkupCompile.lref
+C:\Users\noahm\Documents\GitHub\375-Project\GraphSharpTutorial01\GraphSharpTutorial01\obj\Debug\FileInput.baml
+C:\Users\noahm\Documents\GitHub\375-Project\GraphSharpTutorial01\GraphSharpTutorial01\obj\Debug\Railroad.baml
+C:\Users\noahm\Documents\GitHub\375-Project\GraphSharpTutorial01\GraphSharpTutorial01\obj\Debug\Railroad.g.cs

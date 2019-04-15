@@ -13,10 +13,10 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using QuickGraph;
 
-namespace GraphSharpTutorial01
+namespace RailroadSimulation
 {
     /// <summary>
-    /// Interaction logic for Window1.xaml
+    /// Interaction logic for Railroad.xaml
     /// </summary>
     public partial class Window1 : Window
     {
