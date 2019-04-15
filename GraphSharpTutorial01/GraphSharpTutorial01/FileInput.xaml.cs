@@ -13,6 +13,9 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using QuickGraph;
 
+using System.IO;
+using Microsoft.Win32;
+
 
 
 
@@ -23,18 +26,37 @@ namespace RailroadSimulation
     /// </summary>
     public partial class FileInput : Window
     {
-        GameValueControls GVC;
+        string[] lines;
 
-        public FileInput()
+        public  FileInput()
         {
             InitializeComponent();
 
 
         }
 
-        private void Button_Click(object sender, EventArgs e)
+        private void Button_Click(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(Railroad));
+            Railroad newRailroadWindow = new Railroad();
+            // window1.Show(); // Win10 tablet in tablet mode, use this, when sub Window is closed, the main window will be covered by the Start menu.
+            newRailroadWindow.ShowDialog();
+        }
+
+        private void openFile_Click(object sender, RoutedEventArgs e)
+        {
+            OpenFileDialog openFileDialog = new OpenFileDialog();
+            if (openFileDialog.ShowDialog() == true)
+            {
+                //txtEditor.Text = File.ReadAllText(openFileDialog.FileName);
+                lines = File.ReadAllLines(openFileDialog.FileName);
+                foreach (string line in lines)
+                {
+                    txtEditor.Text += line;
+                    txtEditor.Text += "\n";
+                }
+            }
+
+
         }
     }
 }

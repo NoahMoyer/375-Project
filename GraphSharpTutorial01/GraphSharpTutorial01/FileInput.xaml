@@ -5,10 +5,19 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:RailroadSimulation"
         mc:Ignorable="d"
-        Title="Input File" Height="450" Width="800">
-    <Grid>
-        <Button Content="Button" HorizontalAlignment="Left" Margin="70.364,67.385,0,0" VerticalAlignment="Top" Width="75"/>
+        Title="Input File" Height="500" Width="500">
 
 
-    </Grid>
+    <DockPanel Margin="10">
+        <WrapPanel HorizontalAlignment="Center" DockPanel.Dock="Top" Margin="0,0,0,10">
+            <Grid Height="115.669" Width="146.716">
+                <Button x:Name="Button" Content="Generate Railroad" HorizontalAlignment="Left" Margin="24.788,39.768,0,0" VerticalAlignment="Top" Width="100" Click="Button_Click" RenderTransformOrigin="0.5,0.5"/>
+                <Button x:Name="openFile" Content="Choose File" HorizontalAlignment="Left" Margin="24.788,10,0,0" VerticalAlignment="Top" Width="100" Click="openFile_Click"/>
+            </Grid>
+        </WrapPanel>
+        <TextBox Name="txtEditor" Margin="0,17.161,0,0" />
+    </DockPanel>
+
+
+
 </Window>

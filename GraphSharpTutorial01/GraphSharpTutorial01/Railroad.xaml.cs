@@ -18,7 +18,7 @@ namespace RailroadSimulation
     /// <summary>
     /// Interaction logic for Railroad.xaml
     /// </summary>
-    public partial class Window1 : Window
+    public partial class Railroad : Window
     {
         private IBidirectionalGraph<object, IEdge<object>> _graphToVisualize;
 
@@ -27,7 +27,7 @@ namespace RailroadSimulation
             get { return _graphToVisualize; }
         }
 
-        public Window1()
+        public Railroad()
         {
             CreateGraphToVisualize();
 
@@ -40,11 +40,19 @@ namespace RailroadSimulation
 
             //add the vertices to the graph
             string[] vertices = new string[5];
+            //for (int i = 0; i < 5; i++)
+            //{
+            //    vertices[i] = i.ToString();
+            //    g.AddVertex(vertices[i]);
+            //}
+
             for (int i = 0; i < 5; i++)
             {
-                vertices[i] = i.ToString();
-                g.AddVertex(vertices[i]);
+                vertices[i] = "Hub " + i;
             }
+           
+
+    
 
             //add some edges to the graph
             g.AddEdge(new Edge<object>(vertices[0], vertices[1]));
