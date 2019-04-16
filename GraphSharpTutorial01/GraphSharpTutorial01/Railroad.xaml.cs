@@ -39,20 +39,15 @@ namespace RailroadSimulation
             var g = new BidirectionalGraph<object, IEdge<object>>();
 
             //add the vertices to the graph
-            string[] vertices = new string[5];
-            //for (int i = 0; i < 5; i++)
-            //{
-            //    vertices[i] = i.ToString();
-            //    g.AddVertex(vertices[i]);
-            //}
-
-            for (int i = 0; i < 5; i++)
+            List<string> vertices = new List<string>();
+            for (int i = 0; i < 10; i++)
             {
-                vertices[i] = "Hub " + i;
+                vertices.Add("Hub " + (i + 1).ToString());
+                g.AddVertex(vertices[i]);
             }
-           
 
-    
+
+
 
             //add some edges to the graph
             g.AddEdge(new Edge<object>(vertices[0], vertices[1]));
@@ -60,8 +55,13 @@ namespace RailroadSimulation
             g.AddEdge(new Edge<object>(vertices[2], vertices[3]));
             g.AddEdge(new Edge<object>(vertices[3], vertices[1])); 
             g.AddEdge(new Edge<object>(vertices[1], vertices[4]));
-            
-            
+            g.AddEdge(new Edge<object>(vertices[5], vertices[4]));
+            g.AddEdge(new Edge<object>(vertices[6], vertices[3]));
+            g.AddEdge(new Edge<object>(vertices[7], vertices[2]));
+            g.AddEdge(new Edge<object>(vertices[8], vertices[1]));
+            g.AddEdge(new Edge<object>(vertices[9], vertices[0]));
+
+
 
 
             _graphToVisualize = g;

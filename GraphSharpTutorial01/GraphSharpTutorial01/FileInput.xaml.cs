@@ -44,6 +44,8 @@ namespace RailroadSimulation
 
         private void openFile_Click(object sender, RoutedEventArgs e)
         {
+            int numberOfHubs, numberOfStations, numberOfEdges, numberOfLocomotives;
+
             OpenFileDialog openFileDialog = new OpenFileDialog();
             if (openFileDialog.ShowDialog() == true)
             {
