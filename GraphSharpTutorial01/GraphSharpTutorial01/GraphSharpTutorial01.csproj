@@ -90,6 +90,7 @@
     <Compile Include="FileInput.xaml.cs">
       <DependentUpon>FileInput.xaml</DependentUpon>
     </Compile>
+    <Compile Include="FileInputClass.cs" />
     <Compile Include="Railroad.xaml.cs">
       <DependentUpon>Railroad.xaml</DependentUpon>
       <SubType>Code</SubType>
