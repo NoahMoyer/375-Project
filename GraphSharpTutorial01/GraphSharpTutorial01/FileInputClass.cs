@@ -54,6 +54,13 @@ namespace GraphSharpTutorial01
             private string type; //either passenger or freight
             private string name; //name of the locomotive
 
+            public Hub HomeHub
+            {
+                get { return homeHub; }
+                set { homeHub = value; }
+            }
+
+
 
         }
 
