@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using QuickGraph;
 
-namespace GraphSharpTutorial01
+namespace RailroadSimulation
 {
-    class FileInputClass
+    class BuildRailroad
     {
         private int numberOfHubs, numberOfStations, numberOfEdges, numberOfLocomotives;
         private Hub[] hubs; //hubs in the railroad
@@ -19,12 +19,7 @@ namespace GraphSharpTutorial01
             List<Locomotive> locomotivesInHub = new List<Locomotive>(); //locomotives that have this hub as a home
             private string name; //name of the hub
 
-            public List<Locomotive> LocomotivesInHub //get method for locommotivesInHub
-            {
-                get { return locomotivesInHub; }
-                
-
-            }
+            public List<Locomotive> LocomotivesInHub { get; }//get method for locommotivesInHub
 
             public void addLocomotiveToHub(Locomotive LocomotiveToAddToHub) //add a locomotive in a hub
             {
@@ -40,11 +35,7 @@ namespace GraphSharpTutorial01
             }
 
 
-            public string Name //get and set for name
-            {
-                get { return name; }
-                set { name = value; }
-            }
+            public string Name { get; set; } //get and set for name
 
         }
 
@@ -54,11 +45,9 @@ namespace GraphSharpTutorial01
             private string type; //either passenger or freight
             private string name; //name of the locomotive
 
-            public Hub HomeHub
-            {
-                get { return homeHub; }
-                set { homeHub = value; }
-            }
+            public Hub HomeHub { get; set; }
+            public string Type {get; set;}
+            public string Name { get; set; }
 
 
 
@@ -71,6 +60,13 @@ namespace GraphSharpTutorial01
             private Hub hub; //hub that the edge is connected to. Will not be used for most edges since most edges will not be connected to a hub
             private float startAvailableTime, endAvailableTime; //the time between that the edge is available
 
+            public float Weight { get; set; }
+            public Station Station1 { get; set; }
+            public Station Station2 { get; set; }
+            public Hub Hub { get; set; }
+            public float StartAvailableTime { get; set; }
+            public float EndAvailableTime { get; set; }
+
 
         }
 
@@ -82,29 +78,49 @@ namespace GraphSharpTutorial01
             private int randonOffRangelower, randomOffRangeUpper; //range for how many passengers will get off the passenger train. 0 for freight trains
             private string name; //name of the station
 
+            public string Name { get; set; } //get and set for name of station
+            public string Type { get; set; }
+            public int MaxNumberOfTrains { get; set; }
+            public int RandomOnRangeLower { get; set; }
+            public int RandomOnRangerUpper { get; set; }
+            public int RandomOffRangerLower { get; set; }
+            public int RandomOffRangeUpper { get; set; }
+
 
         }
 
-        public void buildRailroad(int numberOfHubs, int numberOfStations, int numberOfEdges, int numberOfLocomotives)
+        public void buildRailroad(BidirectionalGraph<object, IEdge<object>> RailroadGraph, int numberOfHubs, int numberOfStations, int numberOfEdges, int numberOfLocomotives )
         {
-            var RailroadGraph = new BidirectionalGraph<object, IEdge<object>>();
+            RailroadGraph = new BidirectionalGraph<object, IEdge<object>>();
 
             List<Hub> hubs = new List<Hub>(); //list of hubs
             for (int i = 0; i < numberOfHubs; i++) //adding hubs to the graph as vertices
             {
-                hubs.
-                RailroadGraph.AddVertex(hubs[i]);
+                Hub newHub  = new Hub { Name = "Hub " + (i + 1).ToString() };
+
+
+                hubs.Add(newHub);
+                RailroadGraph.AddVertex(hubs[i].Name);
             }
 
 
             List<Station> stations = new List<Station>(); //list of stations
-            for (int i = 0; i < numberOfHubs; i++) //adding stations to the graph as verticies
+            for (int i = 0; i < numberOfStations; i++) //adding stations to the graph as verticies
             {
-                stations.Add("Station " + (i + 1).ToString());
-                RailroadGraph.AddVertex(stations[i]);
+                Station newStation = new Station { Name = "Station " + (i + 1).ToString() };
+
+                stations.Add(newStation);
+                RailroadGraph.AddVertex(stations[i].Name);
             }
 
+            List<Edge> edges = new List<Edge>();
+            for (int i = 0; i < numberOfStations; i++) //adding stations to the graph as verticies
+            {
+                Edge newEdge = new Edge();
 
+                edges.Add(newEdge);
+                RailroadGraph.AddEdge(new Edge<object>(edges[i].Station1, edges[i].Station2));
+            }
 
         }
 

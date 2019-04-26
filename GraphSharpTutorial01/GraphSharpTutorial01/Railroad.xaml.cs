@@ -13,6 +13,7 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using QuickGraph;
 
+
 namespace RailroadSimulation
 {
     /// <summary>
@@ -37,6 +38,8 @@ namespace RailroadSimulation
         private void CreateGraphToVisualize()
         {
             var g = new BidirectionalGraph<object, IEdge<object>>();
+
+            
 
             //add the vertices to the graph
             List<string> vertices = new List<string>();
